@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Trip Victor — Explore. Travel. Discover.</title>
+    <meta name="description" content="Trip Victor is a tours & travels agency offering curated packages, local experiences, and seamless travel planning." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body class="antialiased bg-[#faf7f2] text-neutral-900 [font-family:'Inter',system-ui,-apple-system,Segoe_UI,Roboto,'Helvetica_Neue',Arial,'Noto_Sans','Apple_Color_Emoji','Segoe_UI_Emoji']">
+
+    <!-- Top Bar -->
+    <header class="fixed inset-x-0 top-0 z-50">
+      <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mt-4 rounded-full border border-neutral-200/60 bg-white/70 backdrop-blur-md">
+          <div class="flex items-center justify-between px-4 py-3">
+            <a href="#" class="flex items-center gap-3">
+              <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-tr from-amber-500/80 to-indigo-500/80 text-white shadow-sm">
+                <i data-lucide="navigation" class="h-5 w-5"></i>
+              </span>
+              <div class="leading-tight">
+                <span class="block [font-family:'Playfair_Display',serif] text-xl font-semibold tracking-tight">Trip Victor</span>
+                <span class="block text-xs text-neutral-500">Explore • Travel • Discover</span>
+              </div>
+            </a>
+            <div class="hidden items-center gap-8 md:flex">
+              <a href="#about" class="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">About</a>
+              <a href="#packages" class="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">Packages</a>
+              <a href="#destinations" class="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">Destinations</a>
+              <a href="#gallery" class="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">Gallery</a>
+              <a href="#contact" class="text-sm font-medium text-neutral-600 hover:text-neutral-900 transition-colors">Contact</a>
+            </div>
+            <div class="flex items-center gap-2">
+              <a href="#contact" class="inline-flex items-center gap-2 rounded-full bg-neutral-900 px-4 py-2.5 text-sm font-medium text-white shadow-sm transition hover:opacity-90">
+                <i data-lucide="phone-call" class="h-4 w-4"></i>
+                Book Now
+              </a>
+              <button id="menuBtn" class="md:hidden inline-flex h-9 w-9 items-center justify-center rounded-full border border-neutral-300/70 bg-white hover:bg-neutral-50 transition">
+                <i data-lucide="menu" class="h-5 w-5 text-neutral-700"></i>
+              </button>
+            </div>
+          </div>
+          <div id="mobileNav" class="hidden border-t border-neutral-200/60 px-4 py-3 md:hidden">
+            <div class="flex flex-col gap-2">
+              <a href="#about" class="rounded-lg px-3 py-2 text-sm font-medium text-neutral-700 hover:bg-neutral-50">About</a>
+              <a href="#packages" class="rounded-lg px-3 py-2 text-sm font-medium text-neutral-700 hover:bg-neutral-50">Packages</a>
+              <a href="#destinations" class="rounded-lg px-3 py-2 text-sm font-medium text-neutral-700 hover:bg-neutral-50">Destinations</a>
+              <a href="#gallery" class="rounded-lg px-3 py-2 text-sm font-medium text-neutral-700 hover:bg-neutral-50">Gallery</a>
+              <a href="#contact" class="rounded-lg px-3 py-2 text-sm font-medium text-neutral-700 hover:bg-neutral-50">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" data-parallax class="relative flex min-h-[92vh] items-center justify-center overflow-hidden bg-fixed bg-center bg-cover" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=2060&auto=format&fit=crop');">
+      <div class="absolute inset-0 bg-gradient-to-b from-black/35 via-black/20 to-[#faf7f2]/80"></div>
+      <div class="relative z-10 mx-auto max-w-6xl px-6 pt-28 text-center">
+        <span class="mx-auto mb-6 inline-flex items-center gap-2 rounded-full bg-white/70 px-3 py-1 text-xs font-medium text-neutral-700 backdrop-blur">
+          <i data-lucide="map-pin" class="h-3.5 w-3.5"></i>
+          India & Worldwide
+        </span>
+        <h1 class="[font-family:'Playfair_Display',serif] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-white">
+          Trip Victor
+        </h1>
+        <p class="mx-auto mt-4 max-w-2xl text-base sm:text-lg text-white/90">
+          Explore. Travel. Discover. Curated tours, local experiences, and stress-free booking.
+        </p>
+        <div class="mt-8 flex items-center justify-center gap-3">
+          <a href="#packages" class="inline-flex items-center gap-2 rounded-full bg-white/90 px-5 py-3 text-sm font-medium text-neutral-900 shadow-sm ring-1 ring-black/5 hover:bg-white transition">
+            View Packages
+            <i data-lucide="chevron-right" class="h-4 w-4"></i>
+          </a>
+          <a href="#contact" class="inline-flex items-center gap-2 rounded-full bg-neutral-900/90 px-5 py-3 text-sm font-medium text-white shadow-sm hover:bg-neutral-900 transition">
+            <i data-lucide="calendar" class="h-4 w-4"></i>
+            Book Consultation
+          </a>
+        </div>
+      </div>
+      <!-- Soft decorative blobs -->
+      <div class="pointer-events-none absolute -left-24 -top-24 h-72 w-72 rounded-full bg-indigo-300/20 blur-3xl"></div>
+      <div class="pointer-events-none absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-amber-300/20 blur-3xl"></div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="relative">
+      <div class="mx-auto max-w-7xl px-6 py-20 sm:py-24">
+        <div class="grid items-center gap-10 md:grid-cols-2">
+          <div data-reveal class="opacity-0 translate-y-8 transition-all duration-700 ease-out">
+            <h2 class="[font-family:'Playfair_Display',serif] text-3xl sm:text-4xl font-semibold tracking-tight text-neutral-900">
+              Crafted journeys, local stories
+            </h2>
+            <p class="mt-4 text-neutral-600">
+              Trip Victor curates meaningful travel — from handpicked beach escapes to immersive cultural itineraries. We handle planning, guides, and local logistics so you can focus on the moments that matter.
+            </p>
+            <div class="mt-6 grid gap-4 sm:grid-cols-2">
+              <div class="flex items-start gap-3">
+                <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-amber-100 text-amber-700">
+                  <i data-lucide="globe" class="h-4 w-4"></i>
+                </span>
+                <div>
+                  <p class="text-sm font-semibold text-neutral-900">Curated Experiences</p>
+                  <p class="text-sm text-neutral-600">Local guides, authentic stays, unique add-ons.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-indigo-100 text-indigo-700">
+                  <i data-lucide="map" class="h-4 w-4"></i>
+                </span>
+                <div>
+                  <p class="text-sm font-semibold text-neutral-900">Seamless Planning</p>
+                  <p class="text-sm text-neutral-600">Transport, stays, and experiences all arranged.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-reveal class="opacity-0 translate-y-8 transition-all duration-700 ease-out">
+            <div class="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl ring-1 ring-black/5">
+              <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?q=80&w=2070&auto=format&fit=crop" alt="Road trip" class="h-full w-full object-cover">
+              <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages -->
+    <section id="packages" class="relative">
+      <div class="mx-auto max-w-7xl px-6 py-20 sm:py-24">
+        <div class="mb-10 flex items-end justify-between">
+          <div>
+            <h3 class="[font-family:'Playfair_Display',serif] text-3xl sm:text-4xl font-semibold tracking-tight">Popular Packages</h3>
+            <p class="mt-3 text-neutral-600">Short getaways to multi-day adventures — handpicked and ready to book.</p>
+          </div>
+          <a href="#contact" class="hidden sm:inline-flex items-center gap-2 rounded-full border border-neutral-300 bg-white px-4 py-2.5 text-sm font-medium text-neutral-800 hover:bg-neutral-50 transition">
+            <i data-lucide="calendar-range" class="h-4 w-4"></i> Request Custom Quote
+          </a>
+        </div>
+
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Package 1 -->
+          <article data-reveal class="opacity-0 translate-y-8 transition-all duration-700 ease-out group overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5">
+            <div class="relative aspect-[4/3] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2069&auto=format&fit=crop" alt="Weekend Beach Escape" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105">
+              <span class="absolute left-3 top-3 inline-flex items-center gap-1 rounded-full bg-white/80 px-2.5 py-1 text-xs font-medium text-neutral-800 backdrop-blur">
+                <i data-lucide="clock" class="h-3.5 w-3.5"></i> 3 Days
+              </span>
+            </div>
+            <div class="p-5">
+              <h4 class="[font-family:'Playfair_Display',serif] text-xl font-semibold tracking-tight">Weekend Beach Escape</h4>
+              <p class="mt-2 text-sm text-neutral-600">Sunrise yoga, coastal dining, and a relaxed seaside stay.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <div class="text-sm text-neutral-700">From ₹9,999 • Flights excluded</div>
+                <a href="#contact" class="inline-flex items-center gap-1.5 text-sm font-medium text-neutral-900 hover:opacity-80">
+                  Book <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Package 2 -->
+          <article data-reveal class="opacity-0 translate-y-8 transition-all duration-700 ease-out group overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5">
+            <div class="relative aspect-[4/3] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2069&auto=format&fit=crop" alt="Hill Station Retreat" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105">
+              <span class="absolute left-3 top-3 inline-flex items-center gap-1 rounded-full bg-white/80 px-2.5 py-1 text-xs font-medium text-neutral-800 backdrop-blur">
+                <i data-lucide="mountain" class="h-3.5 w-3.5"></i> 5 Days
+              </span>
+            </div>
+            <div class="p-5">
+              <h4 class="[font-family:'Playfair_Display',serif] text-xl font-semibold tracking-tight">Hill Station Retreat</h4>
+              <p class="mt-2 text-sm text-neutral-600">Misty mornings, guided treks, and cozy evenings with local cuisine.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <div class="text-sm text-neutral-700">From ₹18,999 • Guided treks</div>
+                <a href="#contact" class="inline-flex items-center gap-1.5 text-sm font-medium text-neutral-900 hover:opacity-80">
+                  Book <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Package 3 -->
+          <article data-reveal class="opacity-0 translate-y-8 transition-all duration-700 ease-out group overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5">
+            <div class="relative aspect-[4/3] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=2069&auto=format&fit=crop" alt="Cultural Immersion" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105">
+              <span class="absolute left-3 top-3 inline-flex items-center gap-1 rounded-full bg-white/80 px-2.5 py-1 text-xs font-medium text-neutral-800 backdrop-blur">
+                <i data-lucide="users" class="h-3.5 w-3.5"></i> 7 Days
+              </span>
+            </div>
+            <div class="p-5">
+              <h4 class="[font-family:'Playfair_Display',serif] text-xl font-semibold tracking-tight">Cultural Immersion</h4>
+              <p class="mt-2 text-sm text-neutral-600">Village stays, cooking classes, and guided heritage walks.</p>
+              <div class="mt-4 flex items-center justify-between">
+                <div class="text-sm text-neutral-700">From ₹27,999 • Small groups</div>
+                <a href="#contact" class="inline-flex items-center gap-1.5 text-sm font-medium text-neutral-900 hover:opacity-80">
+                  Book <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destinations -->
+    <section id="destinations" class="relative bg-white">
+      <div class="mx-auto max-w-7xl px-6 py-20 sm:py-24">
+        <div class="mb-10">
+          <h3 class="[font-family:'Playfair_Display',serif] text-3xl sm:text-4xl font-semibold tracking-tight">Top Destinations</h3>
+          <p class="mt-3 text-neutral-600">Handpicked spots to explore — beaches, hills, and cultural gems.</p>
+        </div>
+        <div class="grid gap-6 lg:grid-cols-2">
+          <div data-reveal class="opacity-0 translate-y-8 transition-all duration-700 ease-out">
+            <div class="relative overflow-hidden rounded-2xl">
+              <img src="https://images.unsplash.com/photo-1603477849227-705c424d1d80?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tropical beach" class="h-full w-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+            </div>
+          </div>
+          <div class="grid gap-6">
+            <article data-reveal class="opacity-0 translate-y-8 transition-all duration-700 ease-out flex items-start gap-4 rounded-2xl border border-neutral-200 bg-neutral-50 p-5">
+              <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1080&q=80" alt="Island escape" class="h-20 w-24 rounded-xl object-cover">
+              <div>
+                <h4 class="[font-family:'Playfair_Display',serif] text-lg font-semibold tracking-tight">Island Escapes</h4>
+                <p class="mt-1 text-sm text-neutral-600">Private beaches, snorkeling, and sunset cruises.</p>
+              </div>
+            </article>
+            <article data-reveal class="opacity-0 translate-y-8 transition-all duration-700 ease-out flex items-start gap-4 rounded-2xl border border-neutral-200 bg-neutral-50 p-5">
+              <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1080&q=80" alt="Mountain trails" class="h-20 w-24 rounded-xl object-cover">
+              <div>
+                <h4 class="[font-family:'Playfair_Display',serif] text-lg font-semibold tracking-tight">Mountain Trails</h4>
+                <p class="mt-1 text-sm text-neutral-600">Trekking routes, panoramic viewpoints, and camp nights.</p>
+              </div>
+            </article>
+            <div class="flex flex-wrap gap-3">
+              <span class="inline-flex items-center gap-2 rounded-full bg-amber-100 px-3 py-1.5 text-xs font-medium text-amber-700">
+                <i data-lucide="leaf" class="h-3.5 w-3.5"></i> Private Tours
+              </span>
+              <span class="inline-flex items-center gap-2 rounded-full bg-indigo-100 px-3 py-1.5 text-xs font-medium text-indigo-700">
+                <i data-lucide="clock" class="h-3.5 w-3.5"></i> Flexible Dates
+              </span>
+              <span class="inline-flex items-center gap-2 rounded-full bg-sky-100 px-3 py-1.5 text-xs font-medium text-sky-700">
+                <i data-lucide="user-check" class="h-3.5 w-3.5"></i> Local Guides
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="relative">
+      <div class="mx-auto max-w-7xl px-6 py-20 sm:py-24">
+        <div class="mb-10">
+          <h3 class="[font-family:'Playfair_Display',serif] text-3xl sm:text-4xl font-semibold tracking-tight">Gallery</h3>
+          <p class="mt-3 text-neutral-600">Moments from our travellers and destinations we love.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4 sm:grid-cols-3">
+          <div data-reveal class="opacity-0 translate-y-8 transition-all duration-700 ease-out relative overflow-hidden rounded-xl">
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=2069&auto=format&fit=crop" alt="Sunrise" class="h-full w-full object-cover">
+          </div>
+          <div data-reveal class="opacity-0 translate-y-8 transition-all duration-700 ease-out relative overflow-hidden rounded-xl">
+            <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=1974&auto=format&fit=crop" alt="Road" class="h-full w-full object-cover">
+          </div>
+          <div data-reveal class="opacity-0 translate-y-8 transition-all duration-700 ease-out relative overflow-hidden rounded-xl">
+            <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1969&auto=format&fit=crop" alt="Camp" class="h-full w-full object-cover">
+          </div>
+          <div data-reveal class="opacity-0 translate-y-8 transition-all duration-700 ease-out relative overflow-hidden rounded-xl">
+            <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=1974&auto=format&fit=crop" alt="Dinner" class="h-full w-full object-cover">
+          </div>
+          <div data-reveal class="opacity-0 translate-y-8 transition-all duration-700 ease-out relative overflow-hidden rounded-xl sm:col-span-2">
+            <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=2070&auto=format&fit=crop" alt="Coastal path" class="h-full w-full object-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Booking -->
+    <section id="contact" class="relative bg-white">
+      <div class="mx-auto max-w-7xl px-6 py-20 sm:py-24">
+        <div class="mb-10">
+          <h3 class="[font-family:'Playfair_Display',serif] text-3xl sm:text-4xl font-semibold tracking-tight">Get in touch & Book</h3>
+          <p class="mt-3 text-neutral-600">Tell us your dates and preferences — we'll create the perfect itinerary.</p>
+        </div>
+        <div class="grid gap-8 lg:grid-cols-2">
+          <div data-reveal class="opacity-0 translate-y-8 transition-all duration-700 ease-out">
+            <div class="relative overflow-hidden rounded-2xl border border-neutral-200">
+              <div class="aspect-[4/3]">
+                <iframe title="Map - Trip Victor" class="h-full w-full" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60988.27150103498!2d73.731!3d15.555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfea2d01e1b4af%3A0x4d1ac59c59c7b8ed!2sCalangute%20Beach!5e0!3m2!1sen!2sin!4v1685467890000"></iframe>
+              </div>
+            </div>
+          </div>
+          <div data-reveal class="opacity-0 translate-y-8 transition-all duration-700 ease-out">
+            <div class="rounded-2xl border border-neutral-200 bg-neutral-50 p-6 sm:p-8">
+              <div class="flex items-center gap-3">
+                <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-neutral-900 text-white">
+                  <i data-lucide="send" class="h-5 w-5"></i>
+                </span>
+                <div>
+                  <h4 class="[font-family:'Playfair_Display',serif] text-xl font-semibold tracking-tight">Request a Quote</h4>
+                  <p class="text-sm text-neutral-600">We typically reply within a few hours with a tailored plan.</p>
+                </div>
+              </div>
+
+              <div class="mt-6 grid gap-4">
+                <div class="flex items-center gap-3 text-neutral-700">
+                  <i data-lucide="map-pin" class="h-5 w-5 text-neutral-500"></i>
+                  India & Worldwide
+                </div>
+                <a href="tel:+919999999999" class="flex items-center gap-3 text-neutral-700 hover:opacity-80">
+                  <i data-lucide="phone" class="h-5 w-5 text-neutral-500"></i>
+                  +91 99999 99999
+                </a>
+                <a href="mailto:hello@tripvictor.com" class="flex items-center gap-3 text-neutral-700 hover:opacity-80">
+                  <i data-lucide="mail" class="h-5 w-5 text-neutral-500"></i>
+                  hello@tripvictor.com
+                </a>
+              </div>
+
+              <form class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                <div>
+                  <label class="mb-1 block text-sm font-medium text-neutral-700">Name</label>
+                  <input type="text" placeholder="Your name" class="w-full rounded-xl border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-neutral-900/10">
+                </div>
+                <div>
+                  <label class="mb-1 block text-sm font-medium text-neutral-700">Email</label>
+                  <input type="email" placeholder="you@example.com" class="w-full rounded-xl border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-neutral-900/10">
+                </div>
+                <div>
+                  <label class="mb-1 block text-sm font-medium text-neutral-700">Preferred Check-in</label>
+                  <input type="date" class="w-full rounded-xl border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 focus:outline-none focus:ring-2 focus:ring-neutral-900/10">
+                </div>
+                <div>
+                  <label class="mb-1 block text-sm font-medium text-neutral-700">Preferred Check-out</label>
+                  <input type="date" class="w-full rounded-xl border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 focus:outline-none focus:ring-2 focus:ring-neutral-900/10">
+                </div>
+                <div class="sm:col-span-2">
+                  <label class="mb-1 block text-sm font-medium text-neutral-700">Message</label>
+                  <textarea rows="4" placeholder="Tell us about your trip — destinations, budget, group size..." class="w-full rounded-xl border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-neutral-900/10"></textarea>
+                </div>
+                <div class="sm:col-span-2 flex items-center justify-between">
+                  <p class="text-xs text-neutral-500">By submitting, you agree to be contacted about your request.</p>
+                  <button type="button" class="inline-flex items-center gap-2 rounded-full bg-neutral-900 px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:opacity-90 transition">
+                    <i data-lucide="send" class="h-4 w-4"></i>
+                    Request Quote
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-neutral-200 bg-white">
+      <div class="mx-auto max-w-7xl px-6 py-10">
+        <div class="flex flex-col items-center justify-between gap-6 sm:flex-row">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-tr from-amber-500/80 to-indigo-500/80 text-white">
+              <i data-lucide="navigation" class="h-5 w-5"></i>
+            </span>
+            <div>
+              <p class="[font-family:'Playfair_Display',serif] text-lg font-semibold tracking-tight">Trip Victor</p>
+              <p class="text-xs text-neutral-500">Explore • Travel • Discover</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 text-neutral-600">
+            <a href="#about" class="text-sm hover:text-neutral-900">About</a>
+            <a href="#packages" class="text-sm hover:text-neutral-900">Packages</a>
+            <a href="#destinations" class="text-sm hover:text-neutral-900">Destinations</a>
+            <a href="#gallery" class="text-sm hover:text-neutral-900">Gallery</a>
+            <a href="#contact" class="text-sm hover:text-neutral-900">Contact</a>
+          </div>
+          <p class="text-xs text-neutral-500">© <span id="yr"></span> Trip Victor. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      // Icons
+      lucide.createIcons();
+
+      // Mobile nav
+      const menuBtn = document.getElementById('menuBtn');
+      const mobileNav = document.getElementById('mobileNav');
+      if (menuBtn) {
+        menuBtn.addEventListener('click', () => {
+          mobileNav.classList.toggle('hidden');
+        });
+      }
+
+      // Year
+      document.getElementById('yr').textContent = new Date().getFullYear();
+
+      // Reveal on scroll
+      const revealEls = document.querySelectorAll('[data-reveal]');
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove('opacity-0', 'translate-y-8');
+            entry.target.classList.add('opacity-100', 'translate-y-0');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      revealEls.forEach((el) => io.observe(el));
+
+      // Parallax hero
+      const hero = document.querySelector('[data-parallax]');
+      const parallax = () => {
+        const scrolled = window.scrollY || window.pageYOffset;
+        if (!hero) return;
+        hero.style.backgroundPositionY = `${Math.round(scrolled * 0.3)}px`;
+      };
+      window.addEventListener('scroll', parallax, { passive: true });
+    </script>
+  </body>
+</html>
+
